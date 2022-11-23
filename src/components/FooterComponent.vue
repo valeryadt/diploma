@@ -46,13 +46,13 @@
             </div>
             <div class="footer__sm-icons">
                 <div>
-                    <VkIcon class="footer__sm-icon" />
+                    <VkIcon class="footer__icon-vk" />
                 </div>
                 <div>
-                    <TwitterIcon class="footer__sm-icon" />
+                    <TwitterIcon class="footer__icon-twitter" />
                 </div>
                 <div>
-                    <OdnoklassnikiIcon class="footer__sm-icon" />
+                    <OdnoklassnikiIcon class="footer__icon-odn" />
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@ export default {
 }
 
 .footer__rights {
-    @apply flex items-end cursor-default
+    @apply flex items-end cursor-default text-xs
 }
 
 .footer__block {
@@ -93,11 +93,11 @@ export default {
 }
 
 .footer__block-name {
-    @apply font-bold text-lg pb-4 cursor-default
+    @apply font-bold text-sm pb-4 cursor-default
 }
 
 .footer__links {
-    @apply text-sm flex justify-evenly flex-col
+    @apply text-xs flex justify-evenly flex-col gap-1
 }
 
 .footer__link {
@@ -113,7 +113,7 @@ export default {
 }
 
 .footer__sm-text {
-    @apply text-center
+    @apply text-center text-xs
 }
 
 
@@ -123,5 +123,17 @@ export default {
 
 .footer__sm-icon {
     @apply text-2xl cursor-pointer
+}
+
+.footer__icon-vk {
+    @apply text-2xl cursor-pointer hover: (text-blue-600 bg-light-400 rounded rounded-full)
+}
+
+.footer__icon-twitter {
+    @apply text-2xl cursor-pointer hover: (text-blue-500 bg-light-400 rounded rounded-full)
+}
+
+.footer__icon-odn {
+    @apply text-2xl cursor-pointer hover: (text-orange-600 bg-light-300 rounded rounded-full)
 }
 </style>

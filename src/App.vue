@@ -1,7 +1,7 @@
 <template>
   <div class="app__container">
     <HeaderComponent />
-    <MainPageComponent />
+    <!-- <SwiperComponent /> -->
     <!-- <RegistrationComponent /> -->
     <FooterComponent />
   </div>
@@ -11,7 +11,8 @@
 import HeaderComponent from './components/HeaderComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import RegistrationComponent from './components/RegistrationComponent.vue';
-import MainPageComponent from './components/MainPageComponent.vue'
+import SwiperComponent from './components/main-page/SwiperComponent.vue'
+// import MainComponent from './components/main-page/MainComponent.vue';
 
 export default {
   name: 'App',
@@ -19,7 +20,8 @@ export default {
     HeaderComponent,
     FooterComponent,
     RegistrationComponent,
-    MainPageComponent
+    SwiperComponent,
+    // MainComponent
   }
 }
 </script>
