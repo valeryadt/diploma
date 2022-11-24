@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="flex flex-col justify-center items-center mt-4">
         <div class="form__container">
             <div class="form__inputs">
                 <div>d</div>

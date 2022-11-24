@@ -22,13 +22,13 @@
                     <div class="grid__item-icon">
                         <WarehouseIcon />
                     </div>
-                    <div class="grid__item-text">Большие объемы складских запасов в наличии</div>
+                    <div class="grid__item-text">Большие объемы складских запасов всегда в наличии </div>
                 </div>
                 <div class="grid__item">
-                    <div class="grid__item-icon">
+                    <div class="grid__icon-quality">
                         <DoneIcon />
                     </div>
-                    <div class="grid__item-text">Контроль качества и гарантия </div>
+                    <div class="grid__text-quality">Контроль качества и гарантия </div>
                 </div>
                 <div class="grid__item">
                     <div class="grid__item-icon">
@@ -73,6 +73,17 @@
 
                     <div>Мы с радостью доставим Ваши товары точно в срок и поможем с выбором стройматериалов!</div>
                 </div>
+                <div class="main__photos">
+                    <div class="main__photo">
+                        <img src="../../../public/photos/main/main1.png">
+                    </div>
+                    <div class="main__photo">
+                        <img src="../../../public/photos/main/main2.png">
+                    </div>
+                    <div class="main__photo">
+                        <img src="../../../public/photos/main/main3.png">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main__form">
@@ -84,6 +95,10 @@
                     обратной связи. Мы обязательно свяжемся с вами в ближайшее время!</div>
             </div>
             <FormComponent />
+            <div class="text-xs text-center">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных
+                данных в
+                соответствии с
+                пользовательским соглашением</div>
         </div>
     </div>
 
@@ -140,6 +155,14 @@ export default {
     @apply flex flex-col justify-center items-center pt-10 pb-10
 }
 
+.main__photos {
+    @apply flex flex-row gap-12 justify-center items-center pt-10
+}
+
+.main__photo {
+    @apply opacity-50 hover: opacity-100
+}
+
 .main__title {
     @apply text-4xl font-black text-center
 }
@@ -168,7 +191,15 @@ export default {
     @apply text-8xl
 }
 
+.grid__icon-quality {
+    @apply text-7xl pb-5
+}
+
 .grid__item-text {
+    @apply text-center
+}
+
+.grid__text-quality {
     @apply text-center
 }
 </style>
