@@ -1,4 +1,7 @@
 <template>
+    <div>
+        <img src="../../../public/photos/banner.jpeg">
+    </div>
     <!-- <SwiperComponent /> -->
     <div class="main__container">
         <div class="main__choice">
@@ -95,7 +98,8 @@
                     обратной связи. Мы обязательно свяжемся с вами в ближайшее время!</div>
             </div>
             <FormComponent />
-            <div class="text-xs text-center">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных
+            <div class="text-xs text-center pt-2">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку
+                персональных
                 данных в
                 соответствии с
                 пользовательским соглашением</div>
@@ -131,7 +135,7 @@ export default {
 
 <style scoped>
 .main__container {
-    @apply flex flex-col gap-10 w-full justify-center items-center
+    @apply flex flex-col gap-10 w-full justify-center items-center pt-10
 }
 
 .main__choice {
@@ -160,7 +164,11 @@ export default {
 }
 
 .main__photo {
-    @apply opacity-50 hover: opacity-100
+    @apply opacity-60 hover: opacity-100
+}
+
+.main__photo {
+    transition: 1s;
 }
 
 .main__title {
@@ -201,5 +209,9 @@ export default {
 
 .grid__text-quality {
     @apply text-center
+}
+
+.main__form {
+    @apply pb-10
 }
 </style>

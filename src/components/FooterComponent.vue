@@ -105,7 +105,7 @@ export default {
 }
 
 .footer__link-description {
-    @apply cursor-default hover: (text-white)
+    @apply cursor-default
 }
 
 .footer__sm {

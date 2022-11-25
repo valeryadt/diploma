@@ -30,6 +30,6 @@ export default {
 }
 
 .app__container {
-  @apply flex justify-between flex-col gap-8 items-center
+  @apply flex justify-between flex-col items-center
 }
 </style>
