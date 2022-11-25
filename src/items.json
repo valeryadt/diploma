@@ -1,0 +1,151 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "name": "Грунтовка",
+            "price": "400",
+            "category": "1",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "2",
+            "name": "Штукатурка гипсовая",
+            "price": "382",
+            "category": "1",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "3",
+            "name": "Штукатурка цементная",
+            "price": "251",
+            "category": "1",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "4",
+            "name": "Профильная труба",
+            "price": "79",
+            "category": "2",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "5",
+            "name": "Лист оцинкованный",
+            "price": "103",
+            "category": "2",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "6",
+            "name": "Арматура",
+            "price": "35",
+            "category": "2",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "7",
+            "name": "Гидроизоляция битумная",
+            "price": "1898",
+            "category": "3",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "8",
+            "name": "Гидроизоляция без битума",
+            "price": "1978",
+            "category": "3",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "9",
+            "name": "Рубироид РПП-300",
+            "price": "498",
+            "category": "3",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "10",
+            "name": "Экструдированный пенополистирол 30мм",
+            "price": "170",
+            "category": "4",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "11",
+            "name": "Напыляемый утеплитель",
+            "price": "671",
+            "category": "4",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "12",
+            "name": "Изоляция отражающая 5мм",
+            "price": "402",
+            "category": "4",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "13",
+            "name": "Геотекстиль нетканый",
+            "price": "5748",
+            "category": "5",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "14",
+            "name": "Геотекстиль ландшафтный",
+            "price": "1365",
+            "category": "5",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "15",
+            "name": "Геотекстиль иглопробивной",
+            "price": "977",
+            "category": "5",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "16",
+            "name": "Газосиликатный блок",
+            "price": "161",
+            "category": "6",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "17",
+            "name": "Кирпич",
+            "price": "66",
+            "category": "6",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "18",
+            "name": "Керамзитный блок",
+            "price": "85",
+            "category": "6",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "19",
+            "name": "Пленка строительная техническая",
+            "price": "485",
+            "category": "7",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "20",
+            "name": "Тент строительный",
+            "price": "293",
+            "category": "7",
+            "photo_src": "https://..."
+        },
+        {
+            "id": "21",
+            "name": "Стретч-пленка",
+            "price": "50000",
+            "category": "7",
+            "photo_src": "https://..."
+        }
+    ]
+}

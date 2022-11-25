@@ -1,8 +1,12 @@
 <template>
     <div class="photo__container flex flex-col justify-center items-start">
         <div class="photo__text absolute text-white px-20">
-            <div class="text-6xl border-6 border-l-yellow-400 border-t-0 border-r-0 border-b-0 p-4">Добро пожаловать!
+            <div class="text-5xl border-6 border-l-yellow-400 border-t-0 border-r-0 border-b-0 p-4">Добро пожаловать!
             </div>
+            <div class="pt-3 pl-10 w-3xl">Мы готовы предложить Вам лучшие стройматериалы, доступные цены и качественное
+                обслуживание. Бесплатная доставка до двери в любой город России и возможность оплаты онлайн или при
+                получении.
+                Гарантия на все товары - 1 год.</div>
         </div>
         <div class="photo"><img src="../../../public/photos/banner2.jpg"></div>
     </div>
