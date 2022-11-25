@@ -118,7 +118,7 @@ export default {
 
 
 .footer__sm-icons {
-    @apply flex flex-row justify-between gap-1
+    @apply flex flex-row justify-between gap-2 pt-2
 }
 
 .footer__sm-icon {
@@ -126,14 +126,14 @@ export default {
 }
 
 .footer__icon-vk {
-    @apply text-2xl cursor-pointer hover: (text-blue-600 bg-light-400 rounded rounded-full)
+    @apply text-3xl bg-white text-blue-600 cursor-pointer rounded-sm
 }
 
 .footer__icon-twitter {
-    @apply text-2xl cursor-pointer hover: (text-blue-500 bg-light-400 rounded rounded-full)
+    @apply text-3xl bg-white text-blue-500 cursor-pointer rounded-sm
 }
 
 .footer__icon-odn {
-    @apply text-2xl cursor-pointer hover: (text-orange-600 bg-light-300 rounded rounded-full)
+    @apply text-3xl cursor-pointer bg-white text-orange-600 rounded-sm
 }
 </style>

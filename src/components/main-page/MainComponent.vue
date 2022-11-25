@@ -1,9 +1,15 @@
 <template>
-    <div>
-        <img src="../../../public/photos/banner.jpeg">
+    <div class="photo__container flex flex-col justify-center items-start">
+        <div class="photo__text absolute text-white px-20">
+            <div class="text-6xl border-6 border-l-yellow-400 border-t-0 border-r-0 border-b-0 p-4">Добро пожаловать!
+            </div>
+        </div>
+        <div class="photo"><img src="../../../public/photos/banner2.jpg"></div>
     </div>
-    <!-- <SwiperComponent /> -->
     <div class="main__container">
+        <div class="main__categories">
+            <div class="main__title">ПОПУЛЯРНЫЕ КАТЕГОРИИ</div>
+        </div>
         <div class="main__choice">
             <div class="main__title">
                 ПОЧЕМУ ВЫБИРАЮТ НАС
@@ -31,7 +37,7 @@
                     <div class="grid__icon-quality">
                         <DoneIcon />
                     </div>
-                    <div class="grid__text-quality">Контроль качества и гарантия </div>
+                    <div class="grid__item-text">Контроль качества и гарантия </div>
                 </div>
                 <div class="grid__item">
                     <div class="grid__item-icon">
@@ -92,13 +98,15 @@
         <div class="main__form">
             <div class="main__title">ФОРМА ОБРАТНОЙ СВЯЗИ</div>
             <div class="mt-10">
-                <div class="main__form-description text-sm">Если у Вас есть какие-либо предложения или вопросы по
+                <div class="main__form-description text-sm cursor-default">Если у Вас есть какие-либо предложения или
+                    вопросы по
                     заказу, то
                     воспользуйтесь нашей формой
                     обратной связи. Мы обязательно свяжемся с вами в ближайшее время!</div>
             </div>
             <FormComponent />
-            <div class="text-xs text-center pt-2">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку
+            <div class="text-xs text-center pt-2 cursor-default">Нажимая на кнопку «Отправить», вы соглашаетесь на
+                обработку
                 персональных
                 данных в
                 соответствии с
@@ -109,7 +117,6 @@
 </template>
 
 <script lang="js">
-import SwiperComponent from '../main-page/SwiperComponent.vue'
 import FormComponent from '../main-page/FormComponent.vue'
 import HandshakeIcon from '../main-page/components/HandshakeIcon.vue'
 import CalendarIcon from '../main-page/components/CalendarIcon.vue'
@@ -121,7 +128,6 @@ import WorkersIcon from '../main-page/components/WorkersIcon.vue'
 
 export default {
     components: {
-        SwiperComponent,
         FormComponent,
         HandshakeIcon,
         CalendarIcon,
@@ -135,7 +141,7 @@ export default {
 
 <style scoped>
 .main__container {
-    @apply flex flex-col gap-10 w-full justify-center items-center pt-10
+    @apply flex flex-col gap-10 w-full justify-center items-center
 }
 
 .main__choice {
@@ -172,11 +178,11 @@ export default {
 }
 
 .main__title {
-    @apply text-4xl font-black text-center
+    @apply text-4xl font-black text-center cursor-default
 }
 
 .main__description {
-    @apply text-sm flex flex-col gap-2 mt-10
+    @apply text-sm flex flex-col gap-2 mt-10 cursor-default
 }
 
 .grid__items {
@@ -188,30 +194,31 @@ export default {
 }
 
 .grid__item-icon {
-    @apply text-8xl
+    @apply text-8xl hover: (opacity-60)
 }
 
 .grid__icon-handshake {
-    @apply text-7xl pb-6
+    @apply text-7xl pb-6 hover: (opacity-60)
 }
 
 .grid__icon-calendar {
-    @apply text-8xl
+    @apply text-8xl hover: (opacity-60)
 }
 
 .grid__icon-quality {
-    @apply text-7xl pb-5
+    @apply text-7xl pb-5 hover: (opacity-60)
 }
 
 .grid__item-text {
-    @apply text-center
+    @apply text-center cursor-default
 }
 
-.grid__text-quality {
-    @apply text-center
-}
 
 .main__form {
     @apply pb-10
+}
+
+.main__categories {
+    @apply bg-gray-200 w-full flex flex-col justify-center items-center
 }
 </style>
