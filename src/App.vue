@@ -1,8 +1,8 @@
 <template>
   <div class="app__container">
     <HeaderComponent />
-    <MainComponent />
-    <!-- <RegistrationComponent /> -->
+    <!-- <MainComponent /> -->
+    <RegistrationComponent />
     <FooterComponent />
   </div>
 </template>
@@ -12,6 +12,10 @@ import HeaderComponent from './components/HeaderComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import RegistrationComponent from './components/RegistrationComponent.vue';
 import MainComponent from './components/main-page/MainComponent.vue';
+import { useToggle } from '@vueuse/core'
+
+const [value, toggle] = useToggle()
+
 
 export default {
   name: 'App',

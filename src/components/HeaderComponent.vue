@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="header__panel-list">
-        <div class="header__panel-item">О нас</div>
+        <div class="header__panel-item"><a href="#about">О нас</a></div>
         <div class="header__panel-item">Доставка</div>
         <div class="header__panel-item">Оплата</div>
         <div class="header__panel-item">Возврат</div>

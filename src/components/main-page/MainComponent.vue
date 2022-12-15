@@ -1,14 +1,22 @@
 <template>
-    <div class="photo__container flex flex-col justify-center items-start">
-        <div class="photo__text absolute text-white px-20">
-            <div class="text-5xl border-6 border-l-yellow-400 border-t-0 border-r-0 border-b-0 p-4">Добро пожаловать!
+    <div class="banner__container">
+        <div class="banner__text">
+            <div class="banner__title">Добро
+                пожаловать!
             </div>
-            <div class="pt-3 pl-10 w-3xl">Мы готовы предложить Вам лучшие стройматериалы, доступные цены и качественное
+            <div class="banner__description">Мы готовы предложить Вам лучшие стройматериалы, доступные
+                цены и качественное
                 обслуживание. Бесплатная доставка до двери в любой город России и возможность оплаты онлайн или при
                 получении.
                 Гарантия на все товары - 1 год.</div>
+            <div class="pl-10 w-xs pt-5">
+                <div class="banner__btn">
+                    Перейти к покупкам
+                    <ArrowIcon class="banner__btn-icon" />
+                </div>
+            </div>
         </div>
-        <div class="photo"><img src="../../../public/photos/banner2.jpg"></div>
+        <div class="banner"><img src="../../../public/photos/banner.jpg"></div>
     </div>
     <div class="main__container">
         <div class="main__categories">
@@ -57,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__about">
+        <div class="main__about" id="about">
             <div class="main__about-container">
                 <div class="main__title">
                     НЕМНОГО О
@@ -101,15 +109,16 @@
         </div>
         <div class="main__form">
             <div class="main__title">ФОРМА ОБРАТНОЙ СВЯЗИ</div>
-            <div class="mt-10">
-                <div class="main__form-description text-sm cursor-default">Если у Вас есть какие-либо предложения или
+            <div class="main__form-container">
+                <div class="main__form-description">Если у Вас есть какие-либо предложения или
                     вопросы по
                     заказу, то
                     воспользуйтесь нашей формой
                     обратной связи. Мы обязательно свяжемся с вами в ближайшее время!</div>
             </div>
             <FormComponent />
-            <div class="text-xs text-center pt-2 cursor-default">Нажимая на кнопку «Отправить», вы соглашаетесь на
+            <div class="main__form-consent">Нажимая на кнопку «Отправить», вы
+                соглашаетесь на
                 обработку
                 персональных
                 данных в
@@ -128,7 +137,7 @@ import CostIcon from '../main-page/components/CostIcon.vue'
 import DoneIcon from '../main-page/components/DoneIcon.vue'
 import WarehouseIcon from '../main-page/components/WarehouseIcon.vue'
 import WorkersIcon from '../main-page/components/WorkersIcon.vue'
-
+import ArrowIcon from '../main-page/components/ArrowIcon.vue'
 
 export default {
     components: {
@@ -138,7 +147,8 @@ export default {
         CostIcon,
         DoneIcon,
         WarehouseIcon,
-        WorkersIcon
+        WorkersIcon,
+        ArrowIcon,
     }
 }
 </script>
@@ -223,6 +233,46 @@ export default {
 }
 
 .main__categories {
-    @apply bg-gray-200 w-full flex flex-col justify-center items-center
+    @apply bg-gray-200 w-full flex flex-col justify-center items-center pt-10
+}
+
+.banner__container {
+    @apply flex flex-col justify-center items-start
+}
+
+.banner__text {
+    @apply absolute text-white px-20 pl-40 cursor-default
+}
+
+.banner__title {
+    @apply text-5xl border-6 border-l-yellow-400 border-t-0 border-r-0 border-b-0 p-4 cursor-default
+}
+
+.banner__description {
+    @apply pt-3 pl-10 w-3xl border-6 border-r-yellow-400 border-t-0 border-l-0 border-b-0
+}
+
+.banner__btn {
+    @apply py-2 px-10 bg-yellow-500 text-white cursor-pointer hover: (bg-yellow-400) active:(bg-yellow-600) flex flex-row gap-2 justify-center items-center
+}
+
+.banner__btn {
+    transition: 0.5s
+}
+
+.banner__btn-icon {
+    @apply text-2xl
+}
+
+.main__form-container {
+    @apply mt-10
+}
+
+.main__form-description {
+    @apply text-sm cursor-default
+}
+
+.main__form-consent {
+    @apply text-xs text-center pt-2 cursor-default
 }
 </style>
